@@ -1,7 +1,6 @@
 //iran
 //fetch("http://api.weatherapi.com/v1/current.json?key=a36665975aaa416ca59142849220612&q=iran&aqi=no");
 
-//USA
 //fetch("http://api.weatherapi.com/v1/current.json?key=a36665975aaa416ca59142849220612&q=USA&aqi=no");
 
 //828328554d944e3f88d191709220712
