@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0-4/css/all.css"
+    integrity="sha512-6U5KNsEE+CRbgf5YNMGPSEE6nZhyiDNx2BZHnQZhmOax53UVM3oleMs4O+56tVRLfeQB1ketGs5zIm+i1AyQrA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>WeatherInfo</title>
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#"><i class="fa fa-sun"></i>Weather<span
+        style="color: rgb(252, 206, 2);">Info</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Forecasts</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item user">
+          <a class="nav-link" href="#"><i class="fa fa-user-circle"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header">
+
+
+    <!-- WEATHER BOX-->
+    <div class="container">
+      <div class="weather-card">
+
+        <div class="top-part">
+          <div class="top-part__center">
+            <form>
+              <input type="text" placeholder="Enter your city...">
+              <button class="btn">search</button>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="middle-part">
+          <div class="main-image">
+            <div class="weather-icon"></div>
+            <h4 class="weather-description"></h4>
+          </div>
+          <div class="main-temperature">
+            <h1 class="current-temperature"></h1>
+          </div>
+          <div class="main-city">
+            <h2 class="city_name"></h2>
+          </div>
+        </div>
+
+
+        <div class="bottom-parts">
+
+          <div class="bottom-part">
+            <div class="bottom-part-image">
+              <img src="icons8-pressure-gauge-100.png" style="width:35px;height: 35px;">
+              <h3 class="pressure"></h3>
+            </div>
+            <div class="bottom-part-description">
+              <h4>Pressure</h4>
+            </div>
+          </div>
+
+
+          <div class="bottom-part">
+            <div class="bottom-part-image">
+              <img src="icons8-temperature-low-100.png" style="width:35px;height: 35px;">
+              <h3 class="min-temperature"></h3>
+            </div>
+            <div class="bottom-part-description">
+              <h4>Min. Temperature</h4>
+            </div>
+          </div>
+
+
+          <div class="bottom-part">
+            <div class="bottom-part-image">
+              <img src="icons8-sun-100.png" style="width:35px;height: 35px;">
+              <h3 class="feels-like"></h3>
+            </div>
+            <div class="bottom-part-description">
+              <h4>Feels Like</h4>
+            </div>
+          </div>
+
+
+          <div class="bottom-part">
+            <div class="bottom-part-image">
+              <img src="icons8-temperature-high-100.png" style="width:35px;height: 35px;">
+              <h3 class="max-temperature"></h3>
+            </div>
+            <div class="bottom-part-description">
+              <h4>Max. Temperature</h4>
+            </div>
+          </div>
+
+
+          <div class="bottom-part">
+            <div class="bottom-part-image">
+              <img src="icons8-wind-100.png" style="width:35px;height: 35px;">
+              <h3 class="wind-speed"></h3>
+            </div>
+            <div class="bottom-part-description">
+              <h4>Wind Speed</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SLIDESHOW HEADER PHOTOS -->
+    <div class="slideshow">
+      <div class="overly"></div>
+      <img class="mySlide img1" src="sky23.jpg">
+      <img class="mySlide img2" src="sky17.jpg">
+      <img class="mySlide img3" src="sky5.jpg">
+
+    </div>
+  </header>
+
+
+  <!-- NEWS AND POSTS -->
+  <!-- HEADING-NEWS -->
+  <div class="container heading-news">
+    <h3 class="heading-text">News & Posts</h3>
+  </div>
+  <div class="blog_container">
+
+    <div class="blog_content">
+      <div class="left_content d-flex ">
+
+        <!-- CARD-1 -->
+        <div class="blog_card">
+          <a href="#" class="figure">
+            <img src="snow.jpg" alt="">
+            <span class="tag" style="background-color: rgb(247, 111, 111);">NEWS</span>
+          </a>
+          <section>
+            <a href="article.html" class="title">Snow Falling in the Northeast, West</a>
+            <p>There's new snow falling this Sunday (Dec. 11), so grab those skis and boards and get to your favorite
+              mountain. Check out the live cams as snow falls across the Northeast and a powerful storm continues to dig
+              across the West. </p>
+            <button class="btn btn-primary">Read more</button>
+          </section>
+        </div>
+
+
+
+        <!-- CARD-2 -->
+        <div class="blog_card">
+          <a href="article.html" class="figure">
+            <img src="rain5.jpg" alt="">
+            <span class="tag">18 DES</span>
+          </a>
+          <section>
+            <a href="#" class="title">Heavy rain in Sydney!</a>
+            <p> Sydney has recorded its wettest year since records began in 1858 as further downpours are forecast in
+              coming days that could cause more flooding in Australia’s eastern states.</p>
+          </section>
+        </div>
+
+        <!-- CARD-3 -->
+        <div class="blog_card">
+          <a href="article.html" class="figure">
+            <img src="north-pole.jpg" alt="">
+            <span class="tag">17 DES</span>
+          </a>
+          <section>
+            <a href="#" class="title">Changes in the Arctic</a>
+            <p>Hotter, rainier, wetter climate change is dramatically transforming the Arctic, report finds.. </p>
+          </section>
+        </div>
+
+        <!-- CARD-4 -->
+        <div class="blog_card">
+          <a href="article.html" class="figure">
+            <img src="storm.jpg" alt="">
+            <span class="tag">15 DES</span>
+            <button class="btn btn-primary" style="width:25px;">See More</button>
+          </a>
+          <section>
+            <a href="#" class="title">storm of the Iberian Peninsula</a>
+            <p>Storm Batters Iberian Peninsula, Damages Roads, Buildings...</p>
+          </section>
+        </div>
+
+        <!-- CARD-5 -->
+        <div class="blog_card">
+          <a href="#" class="figure">
+            <img src="blizzard2.jpg" alt="">
+            <span class="tag">12 DES</span>
+          </a>
+          <section>
+            <a href="#" class="title">Blizzard Conditions Snarl Travel Across High Plains</a>
+            <p>T​he storm has forced major road closures across several states because... </p>
+          </section>
+        </div>
+
+        <!--THREE CARDS-PHOTOS--->
+        <!-- HEADING-PHOTOS-WINTER -->
+        <div class="container heading-photos ">
+          <h3 class="heading-text">The best photos of winter in 2022</h3>
+        </div>
+        <a class="icon-photos col-12 col-lg-4 col-md-9">See More <i class="fa fa-chevron-right"
+            style="color: black;"></i></a>
+
+
+        <div class="card-deck d-flex">
+          <!-- CARD-PHOTO-1 -->
+          <div class="card col col-12 col-lg-4 col-md-9">
+            <a href="#" class="img-link">
+              <img class="card-img-top" src="winter2022-2.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Snowy mountains at night</h5>
+              <p class="card-text">This beautiful view of snowy mountains was photographed at night. Click on the photo
+                to see it closely.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+          <!-- CARD-PHOTO-2 -->
+          <div class="card  col-12 col-lg-4 col-md-9">
+            <a href="#" class="img-link">
+              <img class="card-img-top" src="winter2022-1.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Beautiful snowflakes</h5>
+              <p class="card-text">Photographer captures the most detailed images of snowflakes ever.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+          <!-- CARD-PHOTO-3 -->
+          <div class="card col-12 col-lg-4 col-md-9 ">
+            <a href="#" class="img-link">
+              <img class="card-img-top" src="winter2022-5.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Winter in the forests of Finland</h5>
+              <p class="card-text">For six months of the year Arctic Finland is a wonderland of lakes, snow and the
+                taiga – winter forest – which yields some of the most striking shapes in nature.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="blog_content right_content">
+      <!--SEARCH COLUMN -->
+      <div class="columns search_column">
+        <section class="search">
+          <form>
+            <fieldset><input type="text" name="search" placeholder="Search..." maxlength="100" required=""></fieldset>
+            <fieldset><button type="submit" class="btn1"><i class="fa fa-search"></i></button></fieldset>
+          </form>
+        </section>
+      </div>
+
+      <!--LIST FORECASTS COLUMN-->
+      <div class="columns list-forecasts">
+        <span class="title">Forecasts<a href="#" title="Share"><i class="fa fa-share list-group"></i></a></span>
+        <section>
+          <div class="cards ">
+            <a href="#" class="list-group-item list-group-item-action  list-group-item-light ">Today</a>
+            <a href="#" class="list-group-item list-group-item-action  list-group-item-light ">Hourly</a>
+            <a href="#" class="list-group-item list-group-item-action  list-group-item-light">Daily</a>
+            <a href="#" class="list-group-item list-group-item-action  list-group-item-light">MinuteCast</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light">Monthly</a>
+            <a href="#" class="list-group-item list-group-item-action  list-group-item-light">Air Quality</a>
+          </div>
+        </section>
+      </div>
+
+      <!--CATEGORIES-->
+      <div class="columns categories">
+        <span class="title">Categories</span>
+        <section>
+          <a href="#">News & Posts</a>
+          <a href="#">Forecasts</a>
+          <a href="#">Radar Maps</a>
+          <a href="#">Weather</a>
+          <a href="#">Gallery Photos</a>
+          <a href="#"> Health & Activities</a>
+          <a href="#">Privacy</a>
+        </section>
+      </div>
+
+      <!--POSTS COLUMN-->
+      <div class="columns posts">
+        <span class="title">Top Stories<a href="#" title="Share"><i class="fa fa-share"></i></a></span>
+        <section>
+          <a href="#"><img src="allergie3.jpg" alt="" loading="lazy">
+            <p>Which City Is the Worst for Fall Allergies This Year?</p>
+          </a>
+          <a href="#"><img src="storm cloud.jpg" alt="" loading="lazy">
+            <p>Winter storm to unload travel-snarling snow, ice in Northeast.</p>
+          </a>
+          <a href="#"><img src="earth2.jpg" alt="" loading="lazy">
+            <p>An arctic blast means colder temperatures are on the way.</p>
+          </a>
+        </section>
+      </div>
+
+      <!--COMMENTS COLUMN -->
+      <div class="columns comments">
+        <span class="title"> Recent Comments <a href="#" title="Explore More"><i class="fa fa-share"></i></a></span>
+        <section>
+          <marquee direction="up" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()" class="marquee2">
+            <p>Nature is but a reflection of everything that happens on the earth.</p>
+            <p>Prepare yourself so that you can be a rainbow in somebody else's cloud</p>
+            <p>Weather is a literary specialty, and no untrained hand can turn out a good article on it!</p>
+          </marquee>
+        </section>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">We combine weather data, technology and human insight to improve life and business.
+          </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>PRODUCTS & SERVICES</h6>
+          <ul class="footer-links">
+            <li><a href="#">WeatherInfo APIs</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#"> WeatherInfo Premium</a></li>
+            <li><a href="#">Severe Weather</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>COMPANY</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Feedback & Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">© Copyright TWC Product and Technology LLC 2014, 2022</p>
+
+
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js">
+
+  </script>
+</body>
+
+</html>
